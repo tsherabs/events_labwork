@@ -1,1 +1,6 @@
 dist/ 
+.venv/ 
+__pycache__/ 
+.pytest_cache/ 
+CI_CD_Lab_Tutorial_GitHub_Actions-2.docx 
+~$_CD_Lab_Tutorial_GitHub_Actions-2.docx
