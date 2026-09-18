@@ -27,10 +27,10 @@ jobs:
         steps: 
 
           - name: Fetch the repository 
-            uses: actions/checkout@4 
+            uses: actions/checkout@v4
 
           - name: Install Python 
-            uses: actions/setup-python@5 
+            uses: actions/setup-python@v5 
             with: 
               python-version: "3.12" 
 
@@ -38,7 +38,7 @@ jobs:
             run: python build_site.py 
 
           - name: Keep the geenrated site 
-            uses: actions/artifact@4 
+            uses: actions/artifact@v4 
             with: 
               name: site 
               path: dist 
