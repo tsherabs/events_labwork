@@ -2,7 +2,7 @@ name: Site pipeline
 
 on: 
   push: 
-    branches: [main]
+    branches: [main, add-event]
   pull_request:
     branches: [main]
 
