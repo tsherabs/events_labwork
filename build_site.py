@@ -4,7 +4,7 @@ from datetime import date
 
 def upcoming(events, today):
     future = [e for e in events if e["date"] >= today]
-    return future 
+    return sorted(future, key=lambda e: e["date"]) 
 
 
 def load_events(path): 
