@@ -20,6 +20,11 @@
             "title": "Coding Contest",
             "date": "2027-05-20",
             "venue": "Lab 2"
+        }, 
+        {
+            "title": "Cornell Tech Conference", 
+            "date": "2027-03-02", 
+            "venue": "Convention Hall"
         }
     ]
 }
