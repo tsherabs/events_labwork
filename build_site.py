@@ -7,7 +7,6 @@ def upcoming(events, today):
     return sorted(future, key=lambda e: e["date"]) 
 
 
-
 def load_events(path): 
     data = json.loads(Path(path).read_text())
     return data["events"]
