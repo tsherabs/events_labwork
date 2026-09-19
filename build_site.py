@@ -7,7 +7,6 @@ def upcoming(events, today):
     return future 
 
 
-
 def load_events(path): 
     data = json.loads(Path(path).read_text())
     return data["events"]
