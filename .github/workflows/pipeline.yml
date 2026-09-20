@@ -45,5 +45,18 @@ jobs:
             with: 
               name: site 
               path: dist 
-
+      deploy: 
+        needs: build 
+        runs-on: ubuntu-latest 
+        if: github.ref == 'refs/heads/main'
+        permissions: 
+          pages: write
+          id-token: write 
+        environment: 
+          name: github-pages 
+          url: ${{steps.publish.outputs.page_url}}
+        steps: 
+          - name: Deploy the site
+            id: publish
+            uses: actions/deploy-pages@v4    
 
